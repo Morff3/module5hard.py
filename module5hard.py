@@ -67,6 +67,9 @@ class User:
         self.password = password
         self.age = age
 
+    def __str__(self):
+        return f'{self.nickname}'
+
     def __hash__(self):
         return hash(self.password)
 
